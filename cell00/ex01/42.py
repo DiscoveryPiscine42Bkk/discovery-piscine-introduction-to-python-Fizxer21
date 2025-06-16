@@ -1,4 +1,9 @@
-?> python3 42.py | cat -c
+# 42.py
+print("42")
+
+
+
+
 
 
 
