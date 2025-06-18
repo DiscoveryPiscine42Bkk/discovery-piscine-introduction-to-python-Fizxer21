@@ -1,4 +1,8 @@
 array = [2, 8, 9, 48, 8, 22, -12, 2]
-new_array = [value for value in array if value >5]
-print(array)
-print(new_array)
+
+filtered = [x for x in array if x > 5]
+
+transformed = [x + 2 for x in filtered]
+
+print(array, end='$\n')
+print(transformed, end='$\n')
