@@ -1,12 +1,13 @@
-def main():
-    array = [2, 8, 9, 48, 8, 22, -12, 2]
-    result = []
+original = [2, 8, 9, 48, 8, 22, -12, 2]
 
-    for i in array:
-        if i not in result:
-            result.append(i)
+filtered = [x for x in original if x > 5]
 
-    print(result)
+new_array = [x + 2 for x in filtered]
 
-if __name__ == "__main__":
-    main()
+no_duplicates = []
+for x in new_array:
+    if x not in no_duplicates:
+        no_duplicates.append(x)
+
+print(original)
+print(no_duplicates)
